@@ -58,7 +58,7 @@ class AuthActivity : AppCompatActivity() {
                     )
                     .addOnCompleteListener {
                         if (it.isSuccessful) {
-                            showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
+                            showHome(it.result?.user?.email ?: "", ProviderType.GOOGLE)
                         } else {
                             showAlert()
                         }
@@ -71,7 +71,7 @@ class AuthActivity : AppCompatActivity() {
     private fun showAlert() {
         val alert = AlertDialog.Builder(this)
         alert.setTitle("Error")
-        alert.setMessage("No se pudo crear el usuario")
+        alert.setMessage("No se pudo crear el usuario o no existe\nIntente Registrarse")
         alert.setPositiveButton("Ok") { dialog, which ->
             dialog.dismiss()
         }

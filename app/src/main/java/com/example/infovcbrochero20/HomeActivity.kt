@@ -7,6 +7,8 @@ import com.google.firebase.auth.FirebaseAuth
 
 enum class ProviderType {
         BASIC,
+        GOOGLE,
+        FACEBOOK
 }
 
 class HomeActivity : AppCompatActivity() {
@@ -26,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setup(email: String, provider: String) {
         title = "Inicio"
-        mbinding.textViewEmail.text = email 
+        mbinding.textViewEmail.text = email
         mbinding.textViewProvider.text = provider
 
         mbinding.logoutbutton.setOnClickListener {//Logout button
