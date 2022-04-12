@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "630796176507",
+    "project_id": "infovcbrochero",
+    "storage_bucket": "infovcbrochero.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630796176507:android:e4782d86e29818198c26de",
+        "android_client_info": {
+          "package_name": "com.example.infovcbrochero20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630796176507-irb8khnf4fpa5c6gkdq36f4k5gnlmatf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNXMJ5iPfojfaJieW9mV0osFuTJ1hwgE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630796176507-irb8khnf4fpa5c6gkdq36f4k5gnlmatf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

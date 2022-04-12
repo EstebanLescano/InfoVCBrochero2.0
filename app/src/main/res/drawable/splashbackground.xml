@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:opacity="opaque"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/green"/>
+    <item
+        android:left="1dp"
+        android:right="1dp"
+        android:top="8dp"
+        android:bottom="50dp"
+        >
+        <bitmap android:src="@drawable/iglesiasplash"/>
+    </item>
+
+</layer-list>
