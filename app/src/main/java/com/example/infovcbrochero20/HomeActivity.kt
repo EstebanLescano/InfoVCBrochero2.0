@@ -22,20 +22,18 @@ class HomeActivity : AppCompatActivity() {
 
         val bundle = intent.extras
         val email = bundle?.getString("email")
-        val provider = bundle?.getString("password")
-        setup(email?:"", provider?: "")
+        val saludo = ("Hola $email")
+        setup(email?:"", saludo?: "")
     }
 
-    private fun setup(email: String, provider: String) {
+    private fun setup(email: String, saludo: String) {
         title = "Inicio"
         mbinding.textViewEmail.text = email
-        mbinding.textViewProvider.text = provider
+        mbinding.textViewSaludo.text = saludo
 
         mbinding.logoutbutton.setOnClickListener {//Logout button
             FirebaseAuth.getInstance().signOut()
             onBackPressed()//vuelve a la pantalla anterior
         }
-
-
     }
 }
