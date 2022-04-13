@@ -8,12 +8,13 @@ package com.example.infovcbrochero20
 * dende vamos a tener un recycler view con una lista de lugares donde se pueden visitar y
 * una lista de lugares donde se puede hacer una reserva.
 * */
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AlertDialog
 import com.example.infovcbrochero20.databinding.ActivityAuthBinding
-import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 
 class AuthActivity : AppCompatActivity() {
@@ -66,13 +67,20 @@ class AuthActivity : AppCompatActivity() {
 
             }
         }
+        hidekeyboard() //funcion para ocultar el teclado
+    }
+    //funcion para ocultar el teclado
+    private fun hidekeyboard() {
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+
     }
 
     private fun showAlert() {
         val alert = AlertDialog.Builder(this)
         alert.setTitle("Error")
-        alert.setMessage("No se pudo crear el usuario o no existe\nIntente Registrarse")
-        alert.setPositiveButton("Ok") { dialog, which ->
+        alert.setMessage("No se pudo crear el usuario o no existe\n Intente Registrarse")
+        alert.setPositiveButton("Ok") { dialog, _ ->
             dialog.dismiss()
         }
         alert.show()
@@ -85,7 +93,8 @@ class AuthActivity : AppCompatActivity() {
         }
         startActivity(homeIntent)
     }
-}
 
+
+}
 
 
