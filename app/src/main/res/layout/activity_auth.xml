@@ -70,7 +70,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/registrarse"
-                android:textColor="@color/white" />
+               android:textColor="@color/black" />
 
             <Space
                 android:layout_width="5dp"
@@ -83,7 +83,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:text="@string/iniciar_sesion"
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
 
         </LinearLayout>
     </LinearLayout>

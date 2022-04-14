@@ -22,20 +22,20 @@ class HomeActivity : AppCompatActivity() {
         mbinding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(mbinding.root)
 
-        val bundle = intent.extras
-        val email = bundle?.getString("email")
-        val saludo = ("Hola $email")
-        setup(email?:"", saludo?: "")
+//        val bundle = intent.extras
+//        val email = bundle?.getString("email")
+//        val saludo = ("Hola $email")
+//        setup(email?:"", saludo?: "")
     }
 
-    private fun setup(email: String, saludo: String) {
-        title = "Inicio"
-        mbinding.textViewEmail.text = email
-        mbinding.textViewSaludo.text = saludo
-
-        mbinding.logoutbutton.setOnClickListener {//Logout button
-            FirebaseAuth.getInstance().signOut()
-            onBackPressed()//vuelve a la pantalla anterior
-        }
-    }
+//    private fun setup(email: String, saludo: String) {
+//        title = "Inicio"
+//        mbinding.textViewEmail.text = email
+//        mbinding.textViewSaludo.text = saludo
+//
+//        mbinding.logoutbutton.setOnClickListener {//Logout button
+//            FirebaseAuth.getInstance().signOut()
+//            onBackPressed()//vuelve a la pantalla anterior
+//        }
+//    }
 }
