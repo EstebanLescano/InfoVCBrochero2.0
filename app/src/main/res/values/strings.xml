@@ -8,4 +8,8 @@
     <string name="Email">Email</string>
     <string name="password">password</string>
     <string name="cerrarSesion">Cerrar Sesion</string>
+    <string name="visitar">Lugares para visitar</string>
+    <string name="alojamiento">Alojamientos</string>
+    <string name="puntosdeinteres">Puntos de Interes</string>
+    <string name="gastronomia">Gastronomia</string>
 </resources>
