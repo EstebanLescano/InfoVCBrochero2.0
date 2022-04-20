@@ -1,16 +1,15 @@
 package com.example.infovcbrochero20
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.inputmethod.InputMethodManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.infovcbrochero20.adapter.LugaresAdapter
 import com.example.infovcbrochero20.databinding.ActivityHomeBinding
-import com.google.firebase.auth.FirebaseAuth
+import com.example.infovcbrochero20.model.LugaresProvider
 
 enum class ProviderType {
-        BASIC,
-        GOOGLE,
-        FACEBOOK
+    BASIC,
+    GOOGLE,
 }
 
 class HomeActivity : AppCompatActivity() {
@@ -21,21 +20,21 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mbinding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(mbinding.root)
+        btnvisitar()
 
-//        val bundle = intent.extras
-//        val email = bundle?.getString("email")
-//        val saludo = ("Hola $email")
-//        setup(email?:"", saludo?: "")
     }
 
-//    private fun setup(email: String, saludo: String) {
-//        title = "Inicio"
-//        mbinding.textViewEmail.text = email
-//        mbinding.textViewSaludo.text = saludo
-//
-//        mbinding.logoutbutton.setOnClickListener {//Logout button
-//            FirebaseAuth.getInstance().signOut()
-//            onBackPressed()//vuelve a la pantalla anterior
-//        }
-//    }
+    private fun btnvisitar() {
+        mbinding.visitar.setOnClickListener {
+            val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewLugares)
+            recyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
+            recyclerView.adapter = LugaresAdapter(LugaresProvider.lugaresList)
+
+        }
+
+    }
+
+
 }
+
+
