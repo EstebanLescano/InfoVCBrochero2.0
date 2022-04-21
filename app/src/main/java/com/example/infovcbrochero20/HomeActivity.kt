@@ -1,18 +1,17 @@
 package com.example.infovcbrochero20
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.RecyclerView
-import com.example.infovcbrochero20.adapter.LugaresAdapter
+import android.view.View
 import com.example.infovcbrochero20.databinding.ActivityHomeBinding
-import com.example.infovcbrochero20.model.LugaresProvider
 
 enum class ProviderType {
     BASIC,
     GOOGLE,
 }
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var mbinding: ActivityHomeBinding
 
@@ -20,21 +19,34 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mbinding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(mbinding.root)
-        btnvisitar()
 
+        mbinding.visitar.setOnClickListener(this)
+        mbinding.alojamiento.setOnClickListener(this)
     }
 
-    private fun btnvisitar() {
-        mbinding.visitar.setOnClickListener {
-            val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewLugares)
-            recyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
-            recyclerView.adapter = LugaresAdapter(LugaresProvider.lugaresList)
-
+    override fun onClick(p0: View?) {
+        when(p0?.id){
+            R.id.visitar -> {
+                val intent = Intent(this, RecyclerActivityLugares::class.java)
+                startActivity(intent)
+            }
+            R.id.alojamiento -> {
+                val intent = Intent(this, RecyclerActivityAlojamiento::class.java)
+                startActivity(intent)
+            }
+            R.id.puntosdeinteres -> {
+//                val intent = Intent(this, RecyclerActivityRestaurante::class.java)
+//                startActivity(intent)
+            }
+            R.id.gastronomia -> {
+//                val intent = Intent(this, RecyclerActivityGastronomia::class.java)
+//                startActivity(intent)
+            }
         }
-
     }
-
 
 }
+
+
 
 
