@@ -20,12 +20,15 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         mbinding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(mbinding.root)
 
-        mbinding.visitar.setOnClickListener(this)
-        mbinding.alojamiento.setOnClickListener(this)
+        mbinding.visitar.setOnClickListener(this)//esta es la referencia al boton sino no funciona
+        mbinding.alojamiento.setOnClickListener(this)//esta es la referencia al boton sino no funciona
+        mbinding.puntosdeinteres.setOnClickListener(this)//esta es la referencia al boton sino no funciona
+        mbinding.gastronomia.setOnClickListener(this)//esta es la referencia al boton sino no funciona
+
     }
 
-    override fun onClick(p0: View?) {
-        when(p0?.id){
+    override fun onClick(vistabotones: View?) {
+        when(vistabotones?.id){
             R.id.visitar -> {
                 val intent = Intent(this, RecyclerActivityLugares::class.java)
                 startActivity(intent)
@@ -35,7 +38,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.puntosdeinteres -> {
-//                val intent = Intent(this, RecyclerActivityRestaurante::class.java)
+//                val intent = Intent(this, RecyclerActivityPuntosDeInteres::class.java)
 //                startActivity(intent)
             }
             R.id.gastronomia -> {

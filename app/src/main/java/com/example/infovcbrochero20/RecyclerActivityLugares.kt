@@ -16,12 +16,12 @@ class RecyclerActivityLugares : AppCompatActivity() {
         mbinding = ActivityRecyclerLugaresBinding.inflate(layoutInflater)
         setContentView(mbinding.root)
 
-        initRecycler()
+        initRecyclerLugar()
     }
 
-    private fun initRecycler() {
-        mbinding.recyclerViewLugares.layoutManager = LinearLayoutManager(this)
-        mbinding.recyclerViewLugares.adapter = LugaresAdapter(LugaresProvider.lugaresList)
+    private fun initRecyclerLugar() {
+        mbinding.recyclerLugares.layoutManager = LinearLayoutManager(this)
+        mbinding.recyclerLugares.adapter = LugaresAdapter(LugaresProvider.lugaresList)
 
     }
 

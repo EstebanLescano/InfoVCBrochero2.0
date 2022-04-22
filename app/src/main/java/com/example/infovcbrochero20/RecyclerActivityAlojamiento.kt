@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.infovcbrochero20.adapter.AlojamientosAdapter
 import com.example.infovcbrochero20.databinding.ActivityRecyclerAlojamientoBinding
-import com.example.infovcbrochero20.model.Alojamientos
 import com.example.infovcbrochero20.model.AlojamientosProvider
 
 class RecyclerActivityAlojamiento : AppCompatActivity() {
@@ -17,11 +16,11 @@ class RecyclerActivityAlojamiento : AppCompatActivity() {
         binding = ActivityRecyclerAlojamientoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initRecyclerView()
+        initRecyclerAlojamientos()
 
     }
 
-    private fun initRecyclerView() {
+    private fun initRecyclerAlojamientos() {
         binding.recyclerAlojamientos.layoutManager = LinearLayoutManager(this)
         binding.recyclerAlojamientos.adapter =
             AlojamientosAdapter(AlojamientosProvider.AlojamientosList)

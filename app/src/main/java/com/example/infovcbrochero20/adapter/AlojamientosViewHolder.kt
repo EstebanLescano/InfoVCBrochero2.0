@@ -8,13 +8,15 @@ import com.example.infovcbrochero20.databinding.ItemAlojamientosBinding
 
 class AlojamientosViewHolder (view: View): RecyclerView.ViewHolder(view) {
 
-    private val binding = ItemAlojamientosBinding.bind(view)
+    private val mbinding = ItemAlojamientosBinding.bind(view)
 
    fun render(alojamientoModel: Alojamientos) {
-        binding.tvName.text = alojamientoModel.nombre
-        binding.tvdescripcion.text = alojamientoModel.descripcion
-        binding.tvubicacion.text = alojamientoModel.ubicacion
-       Glide.with(binding.ivPhoto.context).load(alojamientoModel.imagen).into(binding.ivPhoto)
+        mbinding.tvName.text = alojamientoModel.nombre
+        mbinding.tvdescripcion.text = alojamientoModel.descripcion
+        mbinding.tvubicacion.text = alojamientoModel.ubicacion
+       Glide.with(mbinding.ivPhoto.context)
+           .load(alojamientoModel.imagen)
+           .into(mbinding.ivPhoto)
 
     }
 }

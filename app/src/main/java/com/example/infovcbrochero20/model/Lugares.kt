@@ -4,6 +4,5 @@ data class Lugares(
     val nombre: String,
     val descripcion: String,
     val servicios: String,
-    val imagen: String
-
+    val imagen: String,
 )

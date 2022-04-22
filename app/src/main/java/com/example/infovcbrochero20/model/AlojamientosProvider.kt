@@ -34,14 +34,14 @@ class AlojamientosProvider {
                         "93d7d1ec3/853x0?op=NONE&enlarge=false&gravity=ce_0_0&quality=80&dpr=1.5",
                 "https://www.google.com.ar/maps/place/Altos+del+Valle/" +
                         "@-31.7069511,-65.0094595,17z/data=!3m1!4b1!4m8!3m7!1s0x942d2693cb994153:" +
-                        "0xabde23446cd4553!5m2!4m1!1i2!8m2!3d-31.7069511!4d-65.0072708?hl=es-419",
+                        "0xabde23446cd4553!5m2!4m1!1i2!8m2!3d-31.7069511!4d-65.0072708?hl=es-419"
             ),
             Alojamientos(
                 "Alojamiento 03",
                 "Calle 1",
                 "Ciudad 1",
                 "Provincia 1",
-                "Pais 1",
+                "Pais 1"
             ),
             Alojamientos(
                 "Alojamiento 04",

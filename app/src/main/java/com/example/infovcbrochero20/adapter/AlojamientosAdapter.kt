@@ -21,8 +21,8 @@ class AlojamientosAdapter(private val AlojamientosList: List<Alojamientos>) :
     }
 
     override fun onBindViewHolder(holder: AlojamientosViewHolder, position: Int) {
-        val item = AlojamientosList[position]
-        holder.render(item)
+        val itemAlojamientos = AlojamientosList[position]
+        holder.render(itemAlojamientos)
     }
 
     override fun getItemCount(): Int = AlojamientosList.size
