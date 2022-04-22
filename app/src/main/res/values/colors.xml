@@ -12,5 +12,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="green">#104614</color>
+    <color name="textbutton">#FFFDFD</color>
 
 </resources>

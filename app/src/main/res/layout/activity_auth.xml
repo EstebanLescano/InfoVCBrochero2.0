@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green"
+    android:background="@drawable/monumento"
     tools:context=".AuthActivity">
 
     <TextView
         android:id="@+id/txtBienvenidos"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="@string/bienvenido"
         android:textSize="44sp"
         android:textStyle="bold"
@@ -44,7 +44,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="12dp" />
+            android:layout_height="16dp" />
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -70,7 +70,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/registrarse"
-               android:textColor="@color/black" />
+               android:textColor="@color/textbutton" />
 
             <Space
                 android:layout_width="5dp"
@@ -83,7 +83,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:text="@string/iniciar_sesion"
-                android:textColor="@color/black" />
+                android:textColor="@color/textbutton" />
 
         </LinearLayout>
     </LinearLayout>
