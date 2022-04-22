@@ -14,6 +14,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="@string/bienvenido"
+        android:textColor="@color/bienvenido"
         android:textSize="44sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +41,8 @@
             android:layout_height="56dp"
             android:ems="10"
             android:hint="@string/Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
 
         <Space
             android:layout_width="match_parent"
@@ -52,7 +54,8 @@
             android:layout_height="56dp"
             android:ems="10"
             android:hint="@string/password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:autofillHints="" />
 
         <Space
             android:layout_width="match_parent"

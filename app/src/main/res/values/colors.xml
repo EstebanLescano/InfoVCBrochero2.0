@@ -13,5 +13,6 @@
     <color name="black">#FF000000</color>
     <color name="green">#104614</color>
     <color name="textbutton">#FFFDFD</color>
+    <color name="bienvenido">#5381C8</color>
 
 </resources>
