@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.infovcbrochero20.databinding.ActivityHomeBinding
+import com.example.infovcbrochero20.view.RecyclerActivityAlojamiento
+import com.example.infovcbrochero20.view.RecyclerActivityLugares
 
 enum class ProviderType {
     BASIC,

@@ -1,4 +1,4 @@
-package com.example.infovcbrochero20
+package com.example.infovcbrochero20.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InfoVCBrochero20">
         <activity
-            android:name=".RecyclerActivityAlojamiento"
+            android:name=".view.RecyclerActivityAlojamiento"
             android:exported="false" />
         <activity
-            android:name=".RecyclerActivityLugares"
+            android:name=".view.RecyclerActivityLugares"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
