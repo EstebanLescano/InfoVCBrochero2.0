@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">InfoVCBrochero2.0</string>
+    <string name="registrarse">register</string>
+    <string name="iniciar_sesion">Log In</string>
+    <string name="bienvenido">Welcome!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="cerrarSesion">Log Out</string>
+    <string name="visitar">Places to visit</string>
+    <string name="alojamiento">Lodging</string>
+    <string name="puntosdeinteres">Points of Interest</string>
+    <string name="gastronomia">Gastronomy</string>
+    <string name="cuadroImage">Image</string>
+</resources>

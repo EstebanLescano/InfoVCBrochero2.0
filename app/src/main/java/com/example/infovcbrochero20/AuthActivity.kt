@@ -15,6 +15,7 @@ import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AlertDialog
 import com.example.infovcbrochero20.databinding.ActivityAuthBinding
+import com.example.infovcbrochero20.viewmodel.hideKeyboard
 import com.google.firebase.auth.FirebaseAuth
 
 class AuthActivity : AppCompatActivity() {
@@ -52,6 +53,7 @@ class AuthActivity : AppCompatActivity() {
         mbinding.loginbutton.setOnClickListener {
             if (mbinding.editTextEmail.text.isNotEmpty() && mbinding.editTextPassword.text.isNotEmpty()) {
 
+//                it.hideKeyboard()
                 FirebaseAuth.getInstance()
                     .signInWithEmailAndPassword(
                         mbinding.editTextEmail.text.toString(),
@@ -65,16 +67,17 @@ class AuthActivity : AppCompatActivity() {
                         }
                     }
 
+
             }
         }
-        hidekeyboard() //funcion para ocultar el teclado
+//        hidekeyboard()
     }
     //funcion para ocultar el teclado
-    private fun hidekeyboard() {
-        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
-
-    }
+//    private fun hidekeyboard() {
+//        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+//        imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+//
+//    }
 
     private fun showAlert() {
         val alert = AlertDialog.Builder(this)

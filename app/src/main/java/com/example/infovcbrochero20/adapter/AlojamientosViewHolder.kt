@@ -13,7 +13,7 @@ class AlojamientosViewHolder (view: View): RecyclerView.ViewHolder(view) {
    fun render(alojamientoModel: Alojamientos) {
         mbinding.tvName.text = alojamientoModel.nombre
         mbinding.tvdescripcion.text = alojamientoModel.descripcion
-        mbinding.tvubicacion.text = alojamientoModel.ubicacion
+      //  mbinding.tvubicacion.text = alojamientoModel.ubicacion
        Glide.with(mbinding.ivPhoto.context)
            .load(alojamientoModel.imagen)
            .into(mbinding.ivPhoto)

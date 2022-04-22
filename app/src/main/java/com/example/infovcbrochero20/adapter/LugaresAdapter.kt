@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.infovcbrochero20.R
 import com.example.infovcbrochero20.model.Lugares
 
-class LugaresAdapter(private val lugaresList: List<Lugares>) :
+class LugaresAdapter(private val lugaresList: List<Lugares>, private val OnclickListener: (Lugares) -> Unit):
     RecyclerView.Adapter<LugaresViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LugaresViewHolder {
@@ -22,7 +22,7 @@ class LugaresAdapter(private val lugaresList: List<Lugares>) :
 
     override fun onBindViewHolder(holder: LugaresViewHolder, position: Int) {
         val itemlugar = lugaresList[position]
-        holder.render(itemlugar)
+        holder.render(itemlugar, OnclickListener)
     }
 
     override fun getItemCount(): Int = lugaresList.size

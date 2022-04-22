@@ -41,7 +41,13 @@ class LugaresProvider {
                         "estacionamiento tarifado por persona $400. Servicio de barbebidas frías " +
                         "y cafetería en el parador",
 
-                "balneario.jpg"
+                "https://scontent.fcor11-1.fna.fbcdn.net/v/t1.6435-9/49900568_" +
+                        "2274238332629159_7856367470766981120_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=" +
+                        "730e14&_nc_eui2=AeG1MCac6H8qAfFEPcbd8TUTQ842giW-vgpDzjaCJb6-" +
+                        "CrnaB1t51HAvspbUn7eqyxI&_nc_ohc=7npWG_bEcYwAX9DoTBP&_nc_oc=" +
+                        "AQnB6C7PRxFsREXW3tV4OhR4OY2d71xU3uwbpUoZJEXKsj4_qulCqQanaXtW6vbADv6qAxF" +
+                        "yFh8atCePz1yo9J2_&_nc_ht=scontent.fcor11-1.fna&oh=00_AT-yUgGuk9qOFxhbvnU" +
+                        "Gh8p87D2KaRRRt_rBXY6ahulLPA&oe=628979C1"
             ),
 
             Lugares(
@@ -92,8 +98,9 @@ class LugaresProvider {
 
                 "Servicios: baños en parador, servicio de comidas rápidas y bebidas frías",
 
-                "https://www.traslasierra.com/Mina-Clavero/Sitios-de-Interes" +
-                        "/Balneario-La-Toma"
+                "https://www.traslasierra.com/media/66b043a1-d16e-449c-9938-ddd508148fec" +
+                        "/AIRNKg/SitiosDeInteres/Mina%20Clavero/balneario%20la%20toma/" +
+                        "la-toma-pileta-1.jpg"
             ),
         )
     }
