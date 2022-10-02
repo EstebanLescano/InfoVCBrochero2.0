@@ -22,7 +22,6 @@ class RecyclerActivityAlojamiento : AppCompatActivity() {
 
     private fun initRecyclerAlojamientos() {
         binding.recyclerAlojamientos.layoutManager = LinearLayoutManager(this)
-        binding.recyclerAlojamientos.adapter =
-            AlojamientosAdapter(AlojamientosProvider.AlojamientosList)
+        binding.recyclerAlojamientos.adapter = AlojamientosAdapter(AlojamientosProvider.AlojamientosList)
     }
 }

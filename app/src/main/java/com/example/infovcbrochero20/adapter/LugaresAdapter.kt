@@ -6,23 +6,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.infovcbrochero20.R
 import com.example.infovcbrochero20.model.Lugares
 
-class LugaresAdapter(private val lugaresList: List<Lugares>, private val OnclickListener: (Lugares) -> Unit):
+class LugaresAdapter(private val lugaresList: List<Lugares>) :
     RecyclerView.Adapter<LugaresViewHolder>() {
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LugaresViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return LugaresViewHolder(
-            layoutInflater.inflate(
-                R.layout.item_lugares,
-                parent,
-                false
-            )
-        )
+        return LugaresViewHolder(layoutInflater.inflate(R.layout.item_lugares, parent, false))
     }
 
     override fun onBindViewHolder(holder: LugaresViewHolder, position: Int) {
-        val itemlugar = lugaresList[position]
-        holder.render(itemlugar, OnclickListener)
+        val item = lugaresList[position]
+        holder.render(item)
+
     }
 
     override fun getItemCount(): Int = lugaresList.size

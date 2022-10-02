@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CursoKotlin/InfoVCBrochero20/app/src/main/res/drawable/ic_santo_cura.xml" value="0.124" />
         <entry key="..\:/CursoKotlin/InfoVCBrochero20/app/src/main/res/drawable/splashbackground.xml" value="0.175" />
         <entry key="..\:/CursoKotlin/InfoVCBrochero20/app/src/main/res/layout-v26/item_lugares.xml" value="0.11302083333333333" />
         <entry key="..\:/CursoKotlin/InfoVCBrochero20/app/src/main/res/layout/activity_auth.xml" value="0.264" />
